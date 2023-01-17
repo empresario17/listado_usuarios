@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  font-family: "Roboto", Tahoma, Geneva, Verdana, sans-serif;
+  /* text-align: center; */
+  box-sizing: border-box;
+}
+.App {
+  padding: 30px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
+}
+.container-hedder {
+  width: 100vw;
+  background-color: blue;
+}
+.general-container {
+  width: 50%;
+}
+.general-container h1 {
+  margin-left: 25px;
+}
+form {
+  width: 100%;
+  height: 280px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.input-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.title {
+  font-weight: bold;
+}
+.description {
+  font-weight: bold;
+}
+.iscompletede {
+  font-weight: bold;
+}
+.input-container input {
+  display: block;
+  padding: 8px 10px;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.input-container-name input{
+  padding: 8px 10px;
+  margin-top: 5px;
+  width: 48%;
+  border-radius: 5px;
+  border: 1px solid silver;
+}
+.input-container-name {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
+}
+.input-container input[type="checkbox"] {
+  display: inline;
+  width: auto;
+}
+.input-container textarea {
+  display: block;
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
+}
+button {
+  width: 80px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.btn-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+form button {
+  background: darkcyan;
+  margin-top: 10px;
+  width: 100%;
+}
+.users-list {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
+}
+.users-list ul {
+  list-style: none;
+  width: 100%;
+  margin: 0;
+  padding: .5px 15px;
+  background-color:rgba(139, 0, 139, 0.678);
+  border-radius: 10px;
+  position: relative;
+}
+.users-list ul.empty{
+  background-color: white;
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: left .3s linear;
+}
+.container-elemnts-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container-items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+.container-items a {
+  font-size: 12px;
+}
+.container-btn {
+  width: 10%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.container-btn i {
+  cursor: pointer;
+}
+.fa-trash-can {
+  color: red;
+}
+.fa-trash-can:hover{
+  margin-bottom: 5px;
+}
+.fa-pencil:hover{
+  margin-bottom: 5px;
+}
+.users-list ul li {
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  background-color: white;
+}
+.users-list ul li h4 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+.delete-btn {
+  margin-top: 1rem;
+  background: rgba(255, 47, 47, 0.749);
+  font-weight: bold;
+}
+.select-btn {
+  margin-top: 1rem;
+  background: rgba(47, 203, 255, 0.241);
+  font-weight: bold;
+}
+.users-not-found img {
+  width: 150px;
+  position: absolute;
+  margin-top: 6rem;
+}
+@media (min-width: 992px) {
+  .users-list ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 2rem;
+    padding-top: 1.5rem;
+    background-color:rgba(139, 0, 139, 0.678);
+    border-radius: 10px;
+    position: relative;
+  }
+  .users-list ul li {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  .container-elemnts-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .users-not-found img {
+    min-width: 250px;
+    margin-top: 5rem;
+    margin-left: 10rem;
+    position: absolute;
+  }
+  .container-items a {
+    font-size: 18px;
+  }
+  .container-general-pop-up {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+button{
+  background-color: cyan;
+}
